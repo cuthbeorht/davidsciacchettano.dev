@@ -1,3 +1,10 @@
+---
+layout: post
+title: Dict and Callable Typing in Python
+date: 2021-05-17 21:44:00
+categories: Dev blog update
+---
+
 # Dict and Callable Typing in Python
 
 ## Summary
