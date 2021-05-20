@@ -19,7 +19,7 @@ Also, break up larger, insurmountable tasks into smaller ones. Take the time to 
 
 Now that I have a plan, I can prioritize the tasks from `Hardest` to `Easiest`. It's better to do the harder ones in the moring since you are fresh.
 
-### Divide and Conquer, and Perhaps Delegate!
+### Divide and Conquer, and Perhaps Delegate
 
 It makes sense to divide larger tasks. It allows tasks to be completed and have a sense of accomplishment.
 
