@@ -5,7 +5,7 @@ date: 2021-12-20 19:00:00
 categories: Dev blog update
 ---
 
-# Building My Homelab  -Part I
+# Building My Homelab - Part I
 
 So, I decided to build a homelab. I've been dabling with setting a homelab on a cloud platform for a while.
 However, I always found it a tad annoying that I had to pay to simply host content when I had a PC lying around at home.
