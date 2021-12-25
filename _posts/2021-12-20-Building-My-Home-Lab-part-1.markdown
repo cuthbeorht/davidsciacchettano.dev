@@ -14,7 +14,7 @@ So, without any more delay, here is my Homelab.
 
 ## Part I
 
-I this first part, I will explain why I chose thte OS and underlying technology. Just know, these are my 
+In this first part, I will explain why I chose thte OS and underlying technology. Just know, these are my 
 choices. They aren't necessarily correct. If you find something wrong or a better way of how to do tihns,
 please leave me a comment, or reach out to me. I listen to all feedback.
 
