@@ -23,7 +23,7 @@ email: None yet
 description: >- # this means to ignore newlines until "baseurl:"
   This is a place where I will add musings about the life I chose as a software developer. It is meant as a guide for others and a learning platform for me.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://davidsciacchettano.ca" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://davidsciacchettano.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dsciacchettano
 github_username:  cuthbeorht
 
