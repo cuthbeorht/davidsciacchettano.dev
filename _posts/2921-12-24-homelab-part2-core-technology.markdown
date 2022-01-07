@@ -32,3 +32,15 @@ services:
 ```
 
 All this is a simple docker-compose file that creates a container using my image `ghcr.io/cuthbeorht/davidsciacchettano.ca` and exposing the port `4000`.
+
+Inside my server, I have setup [Linux Swag](https://docs.linuxserver.io/general/swag). The reason I chose this image is 
+that it completly automates the fetching and configution of an SSL certificate.
+
+Next, since Swag is based on the Nginx Docker image, it is setup to work as a reverse proxy. Right now, I am redirecting the
+Jekyll blog:
+
+- https://davidsciacchettano.dev -> server:4000
+
+With the docker-compose running, it magically redirects the request to my blog! :D
+
+This works with all the other services... None yet... LOL!
