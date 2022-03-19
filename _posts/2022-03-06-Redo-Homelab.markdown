@@ -54,6 +54,7 @@ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 ```
 
+- Set the follow ing environment variable: `export INSTALL_K3S_EXEC="server --no-deploy traefik"`
 - Install K3S on the master node: `curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s`
 - Get the master node's token: `cat /var/lib/rancher/k3s/server/node-token`
 - Setup[ the other nodes:]
