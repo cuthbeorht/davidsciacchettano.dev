@@ -8,6 +8,6 @@ services:
       - JEKYLL_VERSION=3.8
     volumes:
       - ./:/srv/jekyll
-    command: ['jekyll', 'serve', "--watch"]
+    command: ['jekyll', 'serve', "--watch", "--future"]
     ports:
       - "4000:4000"
