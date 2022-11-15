@@ -1,0 +1,91 @@
+---
+layout: post
+title: CIDRs Explained
+date: 2022-11-12 19h52
+categories: IP Addresses
+---
+
+# What is an IP Address?
+
+Let's start with the basics.
+
+## IP Address Classes
+
+- Class A
+    - Public range of 10.0.0.0 to 127.0.0.0
+    - Subnet mask: 255.0.0.0
+    - Number of Networks: 126
+    - Number of hosts per network 16,777,214
+- Class B
+    - Public range of 128.0.0.0 to 191.255.0.0
+    - Subnet mask: 255.255.0.0
+    - Number of Networks: 16,382
+    - Number of hosts per network 65,534
+- Class C
+    - Public range of 192.0.0.0 to 223.255.255.0
+    - Subnet mask: 255.255.255.0
+    - Number of Networks: 2,097,150
+    - Number of hosts per network 254
+- Class D
+    - Public range of 224.0.0.0 to 239.255.255.255
+    - Number of Networks: n/a
+    - Number of hosts per network multicasting
+- Class E
+    - Range: 240.0.0.0 to 255.255.255.255
+    - First octet value range from 240 to 255
+    - Number of Networks: N/A
+    - Number of Hosts per Network: Research/Reserved/Experimental
+
+So, what does all this mean?
+
+For each class, there is a possible range of IP addresses that are possible based on the subnet - Don't worry, I will go into detail on what a subnet is and how it works.
+
+Each class has a range of IPs reserved for private, internal use. Example, Class C has the public range 192.0.0.0 to 223.255.255.0. Many home routers and bundled modem/router combo units use the IP range 192.168.0.0 to 192.168.0.255 or 192.168.1.0 to 192.168.1.255. This range is not accessible outside the router.
+
+## Subnets
+
+So, where do subnets come into play? Well, if you look up, each class of IPs can reserve a lot of IP addresses. And, in the past, companies were able to buy a Class A or B IP address and have all the corresponding IP addresses. To alleviate this problem, Subnets were introduced to limit the range of possible IP addresses. Here is how:
+
+Let's say we have an IP with the following domain: `108.45.34.9/255.255.0.0`. This is how the subnet and subsequent IP range is calculated.
+
+Convert the IP octets to binary
+108 = 1101100
+45 = 00101101
+34 = 00100010
+9 = 00001001
+
+
+255 = 11111111
+255 = 11111111
+255 = 11111111
+0 = 00000000
+
+To calculate the range, you AND the bits
+
+01101100   00101101	00100010	00001001
+11111111  11111111	00000000	00000000
+
+01101100 00101101 00000000 00000000
+
+108.45.34.0 -> The `0` is the network host and is unusable.
+108.45.34.255 -> The `0` is the network broadcast and is unusable.
+
+So, the IP range is 108.45.1.1 to 108.45.255.254.
+
+Simple, right? Now, doesn't writing `108.45.34.9/255.255.0.0` seem annoying and a waste of typing?
+
+## CIDR To The Rescue!
+
+CIDR was introduced to replace the class system for 2 reasons:
+
+- Simplify writing IP ranges assigned to an entity
+- Reduce the size of the IP address range an entity can reserve
+
+Taking the previous example: `108.45.34.9/255.255.0.0` can now be written as:
+
+`108.45.34.9/16` where the `16` means how many bits from the left are `ON` to match the subnet mask ANDing:
+
+16 = 11111111  11111111	00000000	00000000 => From the above example
+
+I hope that clears things up for you :)
+
