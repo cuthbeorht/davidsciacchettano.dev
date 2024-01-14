@@ -38,7 +38,7 @@ Let's start with the basics.
 
 So, what does all this mean?
 
-For each class, there is a possible range of IP addresses that are possible based on the subnet - Don't worry, I will go into detail on what a subnet is and how it works.
+For each class, there is a range of IP addresses that are possible based on the subnet - Don't worry, I will go into detail on what a subnet is and how it works.
 
 Each class has a range of IPs reserved for private, internal use. Example, Class C has the public range 192.0.0.0 to 223.255.255.0. Many home routers and bundled modem/router combo units use the IP range 192.168.0.0 to 192.168.0.255 or 192.168.1.0 to 192.168.1.255. This range is not accessible outside the router.
 
