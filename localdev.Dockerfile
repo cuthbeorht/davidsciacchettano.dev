@@ -2,4 +2,4 @@ FROM jekyll/jekyll
 
 WORKDIR /srv/jekyll
 
-CMD ["jekyll", "serve", "--watch"]
+CMD ["jekyll", "serve", "--watch", "--future"]
