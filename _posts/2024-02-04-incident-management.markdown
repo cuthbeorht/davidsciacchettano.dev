@@ -5,6 +5,8 @@ date: 2024-02-10 08h00
 categories: Incident Management
 ---
 
+![Sinking ship](/assets/sinking-ship.jpg)
+
 You finish your day, get home, put your bag down and hug yor cats (or kids ;) ). You hear a noise from your phone: A notification... From work. It's almost 7PM, you had a long day and you simply want to wind down. You debate ignoring the message, but your work ethic kicks in and makes you look. It's in the incident channel, never a good sign. Production is down. The web application is not responding and is showing a white screen. The feeling of dread starts in your stomach as you hurridely get your laptop out and venture forth your aid.
 
 You, as a software develoer, or any discipline for that matter, an aspect that tends to get overlooked is incident management. This is something that some people just have or don't... Or is it?
