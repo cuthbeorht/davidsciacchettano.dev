@@ -11,3 +11,12 @@ services:
     command: ['jekyll', 'serve', "--watch", "--future"]
     ports:
       - "4000:4000"
+  jekyll_dev:
+    image: jekyll/jekyll
+    environment:
+      - JEKYLL_VERSION=3.8
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/srv/jekyll
+    command: ['jekyll', 'serve']
